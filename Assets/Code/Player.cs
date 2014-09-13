@@ -4,6 +4,7 @@ using System.Collections;
 public class Player : MonoBehaviour
 {
 	public float velocity;
+	public float rotateVelocity;
 	public Camera camera;
 	public GameObject playerModel;
 	public PlayerControls controls;
@@ -18,8 +19,8 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (controls.movePlayer( this )) playerModel.GetComponent<AnimationHack>().setAnimation(AnimationHack.CurrentAnimation.Run);
+		if (controls.movePlayer( this, velocity )) playerModel.GetComponent<AnimationHack>().setAnimation(AnimationHack.CurrentAnimation.Run);
 		else playerModel.GetComponent<AnimationHack>().setAnimation( AnimationHack.CurrentAnimation.Stand );
-		controls.rotatePlayer( this );
+		controls.rotatePlayer( this, rotateVelocity );
 	}
 }

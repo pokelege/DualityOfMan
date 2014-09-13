@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b48482623995a1f4e92b2fe4ecc4edef
+guid: 05dd5a23c53f0bd45b26e7fb73ee04ae
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -21,6 +21,7 @@ ModelImporter:
     100028: pCube3_polySurface1
     100030: pCube4_polySurface1
     100032: //RootNode
+    100034: default
     400000: group1_pasted__pCube2 polySurface1
     400002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     400004: group2_pasted__pCube2 polySurface1
@@ -39,6 +40,7 @@ ModelImporter:
     400028: pCube3_polySurface1
     400030: pCube4_polySurface1
     400032: //RootNode
+    400034: default
     2300000: group1_pasted__pCube2 polySurface1
     2300002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     2300004: group2_pasted__pCube2 polySurface1
@@ -56,6 +58,7 @@ ModelImporter:
     2300026: pCube2_polySurface1
     2300028: pCube3_polySurface1
     2300030: pCube4_polySurface1
+    2300032: default
     3300000: group1_pasted__pCube2 polySurface1
     3300002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     3300004: group2_pasted__pCube2 polySurface1
@@ -73,6 +76,7 @@ ModelImporter:
     3300026: pCube2_polySurface1
     3300028: pCube3_polySurface1
     3300030: pCube4_polySurface1
+    3300032: default
     4300000: group1_pasted__pCube2 polySurface1
     4300002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     4300004: group2_pasted__pCube2 polySurface1
@@ -90,6 +94,7 @@ ModelImporter:
     4300026: pCube2_polySurface1
     4300028: pCube3_polySurface1
     4300030: pCube4_polySurface1
+    4300032: default
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -111,7 +116,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
@@ -142,6 +147,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 

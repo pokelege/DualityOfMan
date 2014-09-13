@@ -19,8 +19,9 @@ public class Player1Controls : PlayerControls
 		Vector3 totalDirection = new Vector3();
 		if ( Input.GetKey( p1Up ) ) totalDirection += player.camera.transform.forward;
 		if ( Input.GetKey( p1Down ) ) totalDirection -= player.camera.transform.forward;
+		totalDirection.y = 0;
 		player.playerModel.transform.position += totalDirection.normalized * velocity;
-		player.camera.transform.position = player.playerModel.transform.position + ( -player.playerModel.transform.forward * 10 );
+		player.camera.transform.position = player.playerModel.transform.position + ( -player.playerModel.transform.forward * 10 ) + new Vector3(0,10,0);
 		player.camera.transform.LookAt( player.playerModel.transform.position );
 		if ( totalDirection.Equals( Vector3.zero ) ) return false;
 		else return true;

@@ -24,17 +24,20 @@ public class AnimationHack : MonoBehaviour {
 
 	public void setAnimation(CurrentAnimation ani)
 	{
-		animation = ani;
-		frames[( int )currentFrame].SetActive( false );
-		if ( animation.Equals( CurrentAnimation.Stand ) )
+		if ( !animation.Equals( ani ) )
 		{
-			currentFrame = standStart;
+			animation = ani;
+			frames[( int )currentFrame].SetActive( false );
+			if ( animation.Equals( CurrentAnimation.Stand ) )
+			{
+				currentFrame = standStart;
+			}
+			else if ( animation.Equals( CurrentAnimation.Run ) )
+			{
+				currentFrame = runStart;
+			}
+			frames[( int )currentFrame].SetActive( true );
 		}
-		else if(animation.Equals( CurrentAnimation.Run ))
-		{
-			currentFrame = runStart;
-		}
-		frames[( int )currentFrame].SetActive( true );
 	}
 
 	public CurrentAnimation getAnimation()
@@ -53,7 +56,7 @@ public class AnimationHack : MonoBehaviour {
 		}
 		else if ( animation.Equals( CurrentAnimation.Run ) && currentFrame >= runEnd )
 		{
-			currentFrame = runEnd;
+			currentFrame = runStart;
 		}
 		frames[( int )currentFrame].SetActive( true );
 	}

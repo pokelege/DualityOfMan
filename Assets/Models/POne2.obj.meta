@@ -20,6 +20,7 @@ ModelImporter:
     100028: pCube3
     100030: pCube4
     100032: //RootNode
+    100034: default
     400000: group2_pasted__pasted__pCube2 pasted__group1
     400002: group8_pasted__pasted__pCube4 pasted__group6
     400004: pasted__group8_group9 pasted__pasted__pasted__pCube4 pasted__pasted__group6
@@ -37,6 +38,7 @@ ModelImporter:
     400028: pCube3
     400030: pCube4
     400032: //RootNode
+    400034: default
     2300000: group2_pasted__pasted__pCube2 pasted__group1
     2300002: group8_pasted__pasted__pCube4 pasted__group6
     2300004: pasted__group8_group9 pasted__pasted__pasted__pCube4 pasted__pasted__group6
@@ -53,6 +55,7 @@ ModelImporter:
     2300026: pCube2
     2300028: pCube3
     2300030: pCube4
+    2300032: default
     3300000: group2_pasted__pasted__pCube2 pasted__group1
     3300002: group8_pasted__pasted__pCube4 pasted__group6
     3300004: pasted__group8_group9 pasted__pasted__pasted__pCube4 pasted__pasted__group6
@@ -69,6 +72,7 @@ ModelImporter:
     3300026: pCube2
     3300028: pCube3
     3300030: pCube4
+    3300032: default
     4300000: group2_pasted__pasted__pCube2 pasted__group1
     4300002: group8_pasted__pasted__pCube4 pasted__group6
     4300004: pasted__group8_group9 pasted__pasted__pasted__pCube4 pasted__pasted__group6
@@ -85,6 +89,7 @@ ModelImporter:
     4300026: pCube2
     4300028: pCube3
     4300030: pCube4
+    4300032: default
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -106,7 +111,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
@@ -137,6 +142,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
