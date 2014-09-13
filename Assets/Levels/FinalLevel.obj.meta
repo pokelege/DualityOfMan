@@ -1,0 +1,226 @@
+fileFormatVersion: 2
+guid: 0dc406f4f7f720a45a495653c4ecffaf
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pasted__pasted__pasted__pasted__pCylinder1_pasted__pasted__pasted__group4
+      pasted__pasted__group6 pasted__group14 group15
+    100004: pasted__pasted__pasted__pCube1_pasted__pasted__group10 pasted__group11
+      group12
+    100006: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group6
+      group14
+    100008: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group7
+      group8
+    100010: pasted__pasted__pCube1_pasted__group10 group11
+    100012: pasted__pasted__pCylinder1_pasted__group4 group6
+    100014: pasted__pasted__pCylinder1_pasted__group4 group7
+    100016: pasted__pasted__polySurface2_pasted__group17 group19
+    100018: pasted__pasted__polySurface2_pasted__group17 group20
+    100020: pasted__pCube1_group10
+    100022: pasted__pCube1_group9
+    100024: pasted__pCube3_group22
+    100026: pasted__polySurface2_group16
+    100028: pasted__polySurface2_group17
+    100030: pasted__polySurface2_group18
+    100032: pasted__pPlane2_group
+    100034: pasted__pPlane5_group1
+    100036: pasted__pTorus1_group21
+    100038: pCube1
+    100040: pCube2
+    100042: pCube3
+    100044: polySurface2
+    100046: pPlane1
+    100048: pPlane2
+    100050: pPlane3
+    100052: pPlane4
+    100054: pPlane5
+    100056: pSphere3
+    100058: pTorus1
+    400000: //RootNode
+    400002: pasted__pasted__pasted__pasted__pCylinder1_pasted__pasted__pasted__group4
+      pasted__pasted__group6 pasted__group14 group15
+    400004: pasted__pasted__pasted__pCube1_pasted__pasted__group10 pasted__group11
+      group12
+    400006: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group6
+      group14
+    400008: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group7
+      group8
+    400010: pasted__pasted__pCube1_pasted__group10 group11
+    400012: pasted__pasted__pCylinder1_pasted__group4 group6
+    400014: pasted__pasted__pCylinder1_pasted__group4 group7
+    400016: pasted__pasted__polySurface2_pasted__group17 group19
+    400018: pasted__pasted__polySurface2_pasted__group17 group20
+    400020: pasted__pCube1_group10
+    400022: pasted__pCube1_group9
+    400024: pasted__pCube3_group22
+    400026: pasted__polySurface2_group16
+    400028: pasted__polySurface2_group17
+    400030: pasted__polySurface2_group18
+    400032: pasted__pPlane2_group
+    400034: pasted__pPlane5_group1
+    400036: pasted__pTorus1_group21
+    400038: pCube1
+    400040: pCube2
+    400042: pCube3
+    400044: polySurface2
+    400046: pPlane1
+    400048: pPlane2
+    400050: pPlane3
+    400052: pPlane4
+    400054: pPlane5
+    400056: pSphere3
+    400058: pTorus1
+    2300000: pasted__pasted__pasted__pasted__pCylinder1_pasted__pasted__pasted__group4
+      pasted__pasted__group6 pasted__group14 group15
+    2300002: pasted__pasted__pasted__pCube1_pasted__pasted__group10 pasted__group11
+      group12
+    2300004: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group6
+      group14
+    2300006: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group7
+      group8
+    2300008: pasted__pasted__pCube1_pasted__group10 group11
+    2300010: pasted__pasted__pCylinder1_pasted__group4 group6
+    2300012: pasted__pasted__pCylinder1_pasted__group4 group7
+    2300014: pasted__pasted__polySurface2_pasted__group17 group19
+    2300016: pasted__pasted__polySurface2_pasted__group17 group20
+    2300018: pasted__pCube1_group10
+    2300020: pasted__pCube1_group9
+    2300022: pasted__pCube3_group22
+    2300024: pasted__polySurface2_group16
+    2300026: pasted__polySurface2_group17
+    2300028: pasted__polySurface2_group18
+    2300030: pasted__pPlane2_group
+    2300032: pasted__pPlane5_group1
+    2300034: pasted__pTorus1_group21
+    2300036: pCube1
+    2300038: pCube2
+    2300040: pCube3
+    2300042: polySurface2
+    2300044: pPlane1
+    2300046: pPlane2
+    2300048: pPlane3
+    2300050: pPlane4
+    2300052: pPlane5
+    2300054: pSphere3
+    2300056: pTorus1
+    3300000: pasted__pasted__pasted__pasted__pCylinder1_pasted__pasted__pasted__group4
+      pasted__pasted__group6 pasted__group14 group15
+    3300002: pasted__pasted__pasted__pCube1_pasted__pasted__group10 pasted__group11
+      group12
+    3300004: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group6
+      group14
+    3300006: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group7
+      group8
+    3300008: pasted__pasted__pCube1_pasted__group10 group11
+    3300010: pasted__pasted__pCylinder1_pasted__group4 group6
+    3300012: pasted__pasted__pCylinder1_pasted__group4 group7
+    3300014: pasted__pasted__polySurface2_pasted__group17 group19
+    3300016: pasted__pasted__polySurface2_pasted__group17 group20
+    3300018: pasted__pCube1_group10
+    3300020: pasted__pCube1_group9
+    3300022: pasted__pCube3_group22
+    3300024: pasted__polySurface2_group16
+    3300026: pasted__polySurface2_group17
+    3300028: pasted__polySurface2_group18
+    3300030: pasted__pPlane2_group
+    3300032: pasted__pPlane5_group1
+    3300034: pasted__pTorus1_group21
+    3300036: pCube1
+    3300038: pCube2
+    3300040: pCube3
+    3300042: polySurface2
+    3300044: pPlane1
+    3300046: pPlane2
+    3300048: pPlane3
+    3300050: pPlane4
+    3300052: pPlane5
+    3300054: pSphere3
+    3300056: pTorus1
+    4300000: pasted__pasted__pasted__pasted__pCylinder1_pasted__pasted__pasted__group4
+      pasted__pasted__group6 pasted__group14 group15
+    4300002: pasted__pasted__pasted__pCube1_pasted__pasted__group10 pasted__group11
+      group12
+    4300004: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group6
+      group14
+    4300006: pasted__pasted__pasted__pCylinder1_pasted__pasted__group4 pasted__group7
+      group8
+    4300008: pasted__pasted__pCube1_pasted__group10 group11
+    4300010: pasted__pasted__pCylinder1_pasted__group4 group6
+    4300012: pasted__pasted__pCylinder1_pasted__group4 group7
+    4300014: pasted__pasted__polySurface2_pasted__group17 group19
+    4300016: pasted__pasted__polySurface2_pasted__group17 group20
+    4300018: pasted__pCube1_group10
+    4300020: pasted__pCube1_group9
+    4300022: pasted__pCube3_group22
+    4300024: pasted__polySurface2_group16
+    4300026: pasted__polySurface2_group17
+    4300028: pasted__polySurface2_group18
+    4300030: pasted__pPlane2_group
+    4300032: pasted__pPlane5_group1
+    4300034: pasted__pTorus1_group21
+    4300036: pCube1
+    4300038: pCube2
+    4300040: pCube3
+    4300042: polySurface2
+    4300044: pPlane1
+    4300046: pPlane2
+    4300048: pPlane3
+    4300050: pPlane4
+    4300052: pPlane5
+    4300054: pSphere3
+    4300056: pTorus1
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

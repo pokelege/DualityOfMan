@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 32cca0f02ea7a804c859c7641f8301ee
+guid: 1bd19a1a3f0438f47aa819512f57be45
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -12,7 +12,6 @@ ModelImporter:
     100012: pPlane2
     100014: pSphere1
     100016: //RootNode
-    100018: default
     400000: pasted__pPlane2_group
     400002: pasted__pSphere1_group1
     400004: pasted__pSphere1_group2
@@ -22,7 +21,6 @@ ModelImporter:
     400012: pPlane2
     400014: pSphere1
     400016: //RootNode
-    400018: default
     2300000: pasted__pPlane2_group
     2300002: pasted__pSphere1_group1
     2300004: pasted__pSphere1_group2
@@ -31,7 +29,6 @@ ModelImporter:
     2300010: pPlane1
     2300012: pPlane2
     2300014: pSphere1
-    2300016: default
     3300000: pasted__pPlane2_group
     3300002: pasted__pSphere1_group1
     3300004: pasted__pSphere1_group2
@@ -40,7 +37,6 @@ ModelImporter:
     3300010: pPlane1
     3300012: pPlane2
     3300014: pSphere1
-    3300016: default
     4300000: pasted__pPlane2_group
     4300002: pasted__pSphere1_group1
     4300004: pasted__pSphere1_group2
@@ -49,26 +45,15 @@ ModelImporter:
     4300010: pPlane1
     4300012: pPlane2
     4300014: pSphere1
-    4300016: default
-    6400000: pasted__pPlane2_group
-    6400002: pasted__pSphere1_group1
-    6400004: pasted__pSphere1_group2
-    6400006: pasted__pSphere1_group3
-    6400008: pCylinder1
-    6400010: pPlane1
-    6400012: pPlane2
-    6400014: pSphere1
-    6400016: default
     9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -81,7 +66,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -111,6 +96,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 
