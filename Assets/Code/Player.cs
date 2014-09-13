@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 	{
 		if ( player2 ) controls = new Player2Controls();
 		else controls = new Player1Controls();
+		controls.setTargetCamPos( camera.transform.position );
 	}
 	
 	// Update is called once per frame

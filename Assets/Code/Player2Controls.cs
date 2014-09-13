@@ -12,6 +12,12 @@ public class Player2Controls : PlayerControls
 	public KeyCode Jump = KeyCode.RightShift;
 	public KeyCode Punch = KeyCode.Slash;
 	public Vector3 lastPos;
+	private Vector3 targetCameraPos;
+
+	public void setTargetCamPos( Vector3 camPos )
+	{
+		targetCameraPos = camPos;
+	}
 	public void movePlayer( Player player, float velocity = 10 )
 	{
 		// player.punchCollider.GetComponent<PunchDetector>().punched
@@ -41,16 +47,27 @@ public class Player2Controls : PlayerControls
 
 	public void rotateCam( Player player, float velocity = 10 )
 	{
-		player.camera.transform.position += player.playerModel.transform.position - lastPos;
-		Vector3 vectorDirection = ( player.camera.transform.position - player.playerModel.transform.position ).normalized;
+		targetCameraPos += player.playerModel.transform.position - lastPos;
+		Vector3 vectorDirection = ( targetCameraPos - player.playerModel.transform.position ).normalized;
 		vectorDirection.y = 0;
 		vectorDirection = vectorDirection.normalized;
-		if ( Input.GetKey( CamRight ) ) player.camera.transform.position += Vector3.Cross( vectorDirection, Vector3.up ) * velocity; //((Quaternion.AngleAxis(-velocity * Time.deltaTime, Vector3.up) * vectorDirection ) * 10)+ new Vector3( 0, 10, 0 );
-		if ( Input.GetKey( CamLeft ) ) player.camera.transform.position += Vector3.Cross( Vector3.up, vectorDirection ) * velocity; //( ( Quaternion.Euler( 0, velocity * Time.deltaTime, 0 ) * vectorDirection ) * 10 ) + new Vector3( 0, 10, 0 );
-		vectorDirection = ( player.camera.transform.position - player.playerModel.transform.position ).normalized;
+		float lastCameraDistance = ( player.camera.transform.position - player.playerModel.transform.position ).magnitude;
+		if ( Input.GetKey( CamRight ) )
+		{
+			targetCameraPos += Vector3.Cross( vectorDirection, Vector3.up ) * velocity;
+			player.camera.transform.position += Vector3.Cross( vectorDirection, Vector3.up ) * velocity;
+		}
+		if ( Input.GetKey( CamLeft ) )
+		{
+			targetCameraPos += Vector3.Cross( Vector3.up, vectorDirection ) * velocity;
+			player.camera.transform.position += Vector3.Cross( Vector3.up, vectorDirection ) * velocity;
+		}
+		player.camera.transform.position = ( ( player.camera.transform.position - player.playerModel.transform.position ).normalized * lastCameraDistance ) + player.playerModel.transform.position;
+		vectorDirection = ( targetCameraPos - player.playerModel.transform.position ).normalized;
 		vectorDirection.y = 0;
 		vectorDirection = vectorDirection.normalized;
-		player.camera.transform.position = ( vectorDirection * 10 ) + new Vector3( 0, 10, 0 ) + player.playerModel.transform.position;
+		targetCameraPos = ( vectorDirection * 10 ) + new Vector3( 0, 10, 0 ) + player.playerModel.transform.position;
+		player.camera.rigidbody.AddForce( ( targetCameraPos - player.camera.transform.position ) * 25 );
 		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, 5, 0 ) );
 	}
 }

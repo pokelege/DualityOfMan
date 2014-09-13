@@ -49,11 +49,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\AnimationHack.cs" />
+    <Compile Include="Assets\Code\LevelManager.cs" />
     <Compile Include="Assets\Code\Player.cs" />
     <Compile Include="Assets\Code\Player1Controls.cs" />
     <Compile Include="Assets\Code\Player2Controls.cs" />
     <Compile Include="Assets\Code\PlayerControls.cs" />
     <Compile Include="Assets\Code\PunchDetector.cs" />
+    <Compile Include="Assets\Code\WarpDetector.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
