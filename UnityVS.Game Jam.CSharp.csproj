@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\AnimationHack.cs" />
+    <Compile Include="Assets\Code\Button.cs" />
     <Compile Include="Assets\Code\Elevator.cs" />
     <Compile Include="Assets\Code\LevelManager.cs" />
     <Compile Include="Assets\Code\LevelOneHandler.cs" />
