@@ -18,7 +18,8 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		controls.movePlayer( this );
+		if (controls.movePlayer( this )) playerModel.GetComponent<AnimationHack>().setAnimation(AnimationHack.CurrentAnimation.Run);
+		else playerModel.GetComponent<AnimationHack>().setAnimation( AnimationHack.CurrentAnimation.Stand );
 		controls.rotatePlayer( this );
 	}
 }

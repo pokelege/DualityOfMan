@@ -48,6 +48,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Code\AnimationHack.cs" />
     <Compile Include="Assets\Code\Player.cs" />
     <Compile Include="Assets\Code\Player1Controls.cs" />
     <Compile Include="Assets\Code\Player2Controls.cs" />
