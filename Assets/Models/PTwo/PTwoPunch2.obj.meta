@@ -20,6 +20,7 @@ ModelImporter:
     100028: PTwo1:Mesh_polySurface8
     100030: PTwo1:Mesh_polySurface9
     100032: //RootNode
+    100034: default
     400000: polySurface1_PTwo1:Mesh
     400002: PTwo1:Mesh_polySurface10
     400004: PTwo1:Mesh_polySurface11
@@ -37,6 +38,7 @@ ModelImporter:
     400028: PTwo1:Mesh_polySurface8
     400030: PTwo1:Mesh_polySurface9
     400032: //RootNode
+    400034: default
     2300000: polySurface1_PTwo1:Mesh
     2300002: PTwo1:Mesh_polySurface10
     2300004: PTwo1:Mesh_polySurface11
@@ -53,6 +55,7 @@ ModelImporter:
     2300026: PTwo1:Mesh_polySurface7
     2300028: PTwo1:Mesh_polySurface8
     2300030: PTwo1:Mesh_polySurface9
+    2300032: default
     3300000: polySurface1_PTwo1:Mesh
     3300002: PTwo1:Mesh_polySurface10
     3300004: PTwo1:Mesh_polySurface11
@@ -69,6 +72,7 @@ ModelImporter:
     3300026: PTwo1:Mesh_polySurface7
     3300028: PTwo1:Mesh_polySurface8
     3300030: PTwo1:Mesh_polySurface9
+    3300032: default
     4300000: polySurface1_PTwo1:Mesh
     4300002: PTwo1:Mesh_polySurface10
     4300004: PTwo1:Mesh_polySurface11
@@ -85,15 +89,17 @@ ModelImporter:
     4300026: PTwo1:Mesh_polySurface7
     4300028: PTwo1:Mesh_polySurface8
     4300030: PTwo1:Mesh_polySurface9
+    4300032: default
     9500000: //RootNode
   materials:
-    importMaterials: 1
+    importMaterials: 0
     materialName: 0
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
@@ -105,7 +111,7 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
@@ -136,6 +142,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
