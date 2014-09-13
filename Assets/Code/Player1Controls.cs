@@ -22,7 +22,7 @@ public class Player1Controls : PlayerControls
 		totalDirection.y = 0;
 		player.playerModel.transform.position += totalDirection.normalized * velocity;
 		player.camera.transform.position = player.playerModel.transform.position + ( -player.playerModel.transform.forward * 10 ) + new Vector3(0,10,0);
-		player.camera.transform.LookAt( player.playerModel.transform.position );
+		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, 5, 0 ) );
 		if ( totalDirection.Equals( Vector3.zero ) ) return false;
 		else return true;
 	}
