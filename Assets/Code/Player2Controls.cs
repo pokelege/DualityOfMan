@@ -76,8 +76,8 @@ public class Player2Controls : PlayerControls
 		vectorDirection = ( targetCameraPos - player.playerModel.transform.position ).normalized;
 		vectorDirection.y = 0;
 		vectorDirection = vectorDirection.normalized;
-		targetCameraPos = ( vectorDirection * 10 ) + new Vector3( 0, 10, 0 ) + player.playerModel.transform.position;
+		targetCameraPos = ( vectorDirection * 3 ) + new Vector3( 0, 1, 0 ) + player.playerModel.transform.position;
 		player.camera.rigidbody.AddForce( ( targetCameraPos - player.camera.transform.position ) * 25 );
-		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, 5, 0 ) );
+		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, 1, 0 ) );
 	}
 }

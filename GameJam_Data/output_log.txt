@@ -14,9 +14,15 @@ Loading D:\Documents\Unity\Game Jam\GameJam_Data\Managed\Assembly-CSharp.dll int
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 0.785701 ms
+UnloadTime: 0.804604 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 966.
-Total: 0.657490 ms (FindLiveObjects: 0.023834 ms CreateObjectMapping: 0.011506 ms MarkObjects: 0.085062 ms  DeleteObjects: 0.044791 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 1092.
+Total: 0.776660 ms (FindLiveObjects: 0.034929 ms CreateObjectMapping: 0.011917 ms MarkObjects: 0.093692 ms  DeleteObjects: 0.053010 ms)
+
+UnloadTime: 0.963223 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 1220.
+Total: 0.688721 ms (FindLiveObjects: 0.035340 ms CreateObjectMapping: 0.018080 ms MarkObjects: 0.095336 ms  DeleteObjects: 0.168481 ms)
 

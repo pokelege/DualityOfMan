@@ -34,11 +34,13 @@ public class Player : MonoBehaviour
 	}
 	void OnCollisionEnter( Collision collision )
 	{
-		if(collision.gameObject.CompareTag("Floor")) collided = true;
+		if(collision.gameObject.CompareTag("Floor")) 
+		collided = true;
 	}
 
 	void OnCollisionExit( Collision collision )
 	{
-		if ( collision.gameObject.CompareTag( "Floor" ) ) collided = false;
+		if ( collision.gameObject.CompareTag( "Floor" ) )
+			collided = false;
 	}
 }
