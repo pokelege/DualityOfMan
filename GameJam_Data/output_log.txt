@@ -10,19 +10,13 @@ Platform assembly: D:\Documents\Unity\Game Jam\GameJam_Data\Managed\UnityEngine.
 Loading D:\Documents\Unity\Game Jam\GameJam_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\Documents\Unity\Game Jam\GameJam_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\Documents\Unity\Game Jam\GameJam_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.060 seconds
+- Completed reload, in  0.063 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-UnloadTime: 0.712144 ms
+UnloadTime: 0.753235 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 899.
-Total: 0.622561 ms (FindLiveObjects: 0.024655 ms CreateObjectMapping: 0.011095 ms MarkObjects: 0.083830 ms  DeleteObjects: 0.050133 ms)
-
-UnloadTime: 0.945964 ms
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
-
-Unloading 61 unused Assets to reduce memory usage. Loaded Objects now: 1027.
-Total: 0.688310 ms (FindLiveObjects: 0.031230 ms CreateObjectMapping: 0.016848 ms MarkObjects: 0.089583 ms  DeleteObjects: 0.177522 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 844.
+Total: 0.633654 ms (FindLiveObjects: 0.022190 ms CreateObjectMapping: 0.009862 ms MarkObjects: 0.073967 ms  DeleteObjects: 0.049311 ms)
 
