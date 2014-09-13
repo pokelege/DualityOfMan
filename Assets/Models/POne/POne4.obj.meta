@@ -22,6 +22,22 @@ ModelImporter:
     100030: pCube4_polySurface1
     100032: //RootNode
     100034: default
+    100036: polySurface1_POne0:Mesh
+    100038: POne0:Mesh_polySurface10
+    100040: POne0:Mesh_polySurface11
+    100042: POne0:Mesh_polySurface12
+    100044: POne0:Mesh_polySurface13
+    100046: POne0:Mesh_polySurface14
+    100048: POne0:Mesh_polySurface15
+    100050: POne0:Mesh_polySurface16
+    100052: POne0:Mesh_polySurface2
+    100054: POne0:Mesh_polySurface3
+    100056: POne0:Mesh_polySurface4
+    100058: POne0:Mesh_polySurface5
+    100060: POne0:Mesh_polySurface6
+    100062: POne0:Mesh_polySurface7
+    100064: POne0:Mesh_polySurface8
+    100066: POne0:Mesh_polySurface9
     400000: group1_pasted__pCube2 polySurface1
     400002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     400004: group2_pasted__pCube2 polySurface1
@@ -41,6 +57,22 @@ ModelImporter:
     400030: pCube4_polySurface1
     400032: //RootNode
     400034: default
+    400036: polySurface1_POne0:Mesh
+    400038: POne0:Mesh_polySurface10
+    400040: POne0:Mesh_polySurface11
+    400042: POne0:Mesh_polySurface12
+    400044: POne0:Mesh_polySurface13
+    400046: POne0:Mesh_polySurface14
+    400048: POne0:Mesh_polySurface15
+    400050: POne0:Mesh_polySurface16
+    400052: POne0:Mesh_polySurface2
+    400054: POne0:Mesh_polySurface3
+    400056: POne0:Mesh_polySurface4
+    400058: POne0:Mesh_polySurface5
+    400060: POne0:Mesh_polySurface6
+    400062: POne0:Mesh_polySurface7
+    400064: POne0:Mesh_polySurface8
+    400066: POne0:Mesh_polySurface9
     2300000: group1_pasted__pCube2 polySurface1
     2300002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     2300004: group2_pasted__pCube2 polySurface1
@@ -59,6 +91,22 @@ ModelImporter:
     2300028: pCube3_polySurface1
     2300030: pCube4_polySurface1
     2300032: default
+    2300034: polySurface1_POne0:Mesh
+    2300036: POne0:Mesh_polySurface10
+    2300038: POne0:Mesh_polySurface11
+    2300040: POne0:Mesh_polySurface12
+    2300042: POne0:Mesh_polySurface13
+    2300044: POne0:Mesh_polySurface14
+    2300046: POne0:Mesh_polySurface15
+    2300048: POne0:Mesh_polySurface16
+    2300050: POne0:Mesh_polySurface2
+    2300052: POne0:Mesh_polySurface3
+    2300054: POne0:Mesh_polySurface4
+    2300056: POne0:Mesh_polySurface5
+    2300058: POne0:Mesh_polySurface6
+    2300060: POne0:Mesh_polySurface7
+    2300062: POne0:Mesh_polySurface8
+    2300064: POne0:Mesh_polySurface9
     3300000: group1_pasted__pCube2 polySurface1
     3300002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     3300004: group2_pasted__pCube2 polySurface1
@@ -77,6 +125,22 @@ ModelImporter:
     3300028: pCube3_polySurface1
     3300030: pCube4_polySurface1
     3300032: default
+    3300034: polySurface1_POne0:Mesh
+    3300036: POne0:Mesh_polySurface10
+    3300038: POne0:Mesh_polySurface11
+    3300040: POne0:Mesh_polySurface12
+    3300042: POne0:Mesh_polySurface13
+    3300044: POne0:Mesh_polySurface14
+    3300046: POne0:Mesh_polySurface15
+    3300048: POne0:Mesh_polySurface16
+    3300050: POne0:Mesh_polySurface2
+    3300052: POne0:Mesh_polySurface3
+    3300054: POne0:Mesh_polySurface4
+    3300056: POne0:Mesh_polySurface5
+    3300058: POne0:Mesh_polySurface6
+    3300060: POne0:Mesh_polySurface7
+    3300062: POne0:Mesh_polySurface8
+    3300064: POne0:Mesh_polySurface9
     4300000: group1_pasted__pCube2 polySurface1
     4300002: group2_pasted__group1 pasted__pasted__pCube2 polySurface1
     4300004: group2_pasted__pCube2 polySurface1
@@ -95,6 +159,22 @@ ModelImporter:
     4300028: pCube3_polySurface1
     4300030: pCube4_polySurface1
     4300032: default
+    4300034: polySurface1_POne0:Mesh
+    4300036: POne0:Mesh_polySurface10
+    4300038: POne0:Mesh_polySurface11
+    4300040: POne0:Mesh_polySurface12
+    4300042: POne0:Mesh_polySurface13
+    4300044: POne0:Mesh_polySurface14
+    4300046: POne0:Mesh_polySurface15
+    4300048: POne0:Mesh_polySurface16
+    4300050: POne0:Mesh_polySurface2
+    4300052: POne0:Mesh_polySurface3
+    4300054: POne0:Mesh_polySurface4
+    4300056: POne0:Mesh_polySurface5
+    4300058: POne0:Mesh_polySurface6
+    4300060: POne0:Mesh_polySurface7
+    4300062: POne0:Mesh_polySurface8
+    4300064: POne0:Mesh_polySurface9
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -104,7 +184,6 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
-    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
