@@ -1,0 +1,142 @@
+fileFormatVersion: 2
+guid: 1ec00e9c1583a554bbb3cbf3e9e39724
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: polySurface1_POne1:Mesh
+    100002: POne1:Mesh_polySurface10
+    100004: POne1:Mesh_polySurface11
+    100006: POne1:Mesh_polySurface12
+    100008: POne1:Mesh_polySurface13
+    100010: POne1:Mesh_polySurface14
+    100012: POne1:Mesh_polySurface15
+    100014: POne1:Mesh_polySurface16
+    100016: POne1:Mesh_polySurface2
+    100018: POne1:Mesh_polySurface3
+    100020: POne1:Mesh_polySurface4
+    100022: POne1:Mesh_polySurface5
+    100024: POne1:Mesh_polySurface6
+    100026: POne1:Mesh_polySurface7
+    100028: POne1:Mesh_polySurface8
+    100030: POne1:Mesh_polySurface9
+    100032: //RootNode
+    400000: polySurface1_POne1:Mesh
+    400002: POne1:Mesh_polySurface10
+    400004: POne1:Mesh_polySurface11
+    400006: POne1:Mesh_polySurface12
+    400008: POne1:Mesh_polySurface13
+    400010: POne1:Mesh_polySurface14
+    400012: POne1:Mesh_polySurface15
+    400014: POne1:Mesh_polySurface16
+    400016: POne1:Mesh_polySurface2
+    400018: POne1:Mesh_polySurface3
+    400020: POne1:Mesh_polySurface4
+    400022: POne1:Mesh_polySurface5
+    400024: POne1:Mesh_polySurface6
+    400026: POne1:Mesh_polySurface7
+    400028: POne1:Mesh_polySurface8
+    400030: POne1:Mesh_polySurface9
+    400032: //RootNode
+    2300000: polySurface1_POne1:Mesh
+    2300002: POne1:Mesh_polySurface10
+    2300004: POne1:Mesh_polySurface11
+    2300006: POne1:Mesh_polySurface12
+    2300008: POne1:Mesh_polySurface13
+    2300010: POne1:Mesh_polySurface14
+    2300012: POne1:Mesh_polySurface15
+    2300014: POne1:Mesh_polySurface16
+    2300016: POne1:Mesh_polySurface2
+    2300018: POne1:Mesh_polySurface3
+    2300020: POne1:Mesh_polySurface4
+    2300022: POne1:Mesh_polySurface5
+    2300024: POne1:Mesh_polySurface6
+    2300026: POne1:Mesh_polySurface7
+    2300028: POne1:Mesh_polySurface8
+    2300030: POne1:Mesh_polySurface9
+    3300000: polySurface1_POne1:Mesh
+    3300002: POne1:Mesh_polySurface10
+    3300004: POne1:Mesh_polySurface11
+    3300006: POne1:Mesh_polySurface12
+    3300008: POne1:Mesh_polySurface13
+    3300010: POne1:Mesh_polySurface14
+    3300012: POne1:Mesh_polySurface15
+    3300014: POne1:Mesh_polySurface16
+    3300016: POne1:Mesh_polySurface2
+    3300018: POne1:Mesh_polySurface3
+    3300020: POne1:Mesh_polySurface4
+    3300022: POne1:Mesh_polySurface5
+    3300024: POne1:Mesh_polySurface6
+    3300026: POne1:Mesh_polySurface7
+    3300028: POne1:Mesh_polySurface8
+    3300030: POne1:Mesh_polySurface9
+    4300000: polySurface1_POne1:Mesh
+    4300002: POne1:Mesh_polySurface10
+    4300004: POne1:Mesh_polySurface11
+    4300006: POne1:Mesh_polySurface12
+    4300008: POne1:Mesh_polySurface13
+    4300010: POne1:Mesh_polySurface14
+    4300012: POne1:Mesh_polySurface15
+    4300014: POne1:Mesh_polySurface16
+    4300016: POne1:Mesh_polySurface2
+    4300018: POne1:Mesh_polySurface3
+    4300020: POne1:Mesh_polySurface4
+    4300022: POne1:Mesh_polySurface5
+    4300024: POne1:Mesh_polySurface6
+    4300026: POne1:Mesh_polySurface7
+    4300028: POne1:Mesh_polySurface8
+    4300030: POne1:Mesh_polySurface9
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
