@@ -7,8 +7,10 @@ public class Player : MonoBehaviour
 	public float rotateVelocity;
 	public Camera camera;
 	public GameObject playerModel;
+	public GameObject punchCollider;
 	public PlayerControls controls;
 	public bool player2 = false;
+	public bool collided = false;
 	// Use this for initialization
 	void Start ()
 	{
@@ -19,8 +21,20 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		if (controls.movePlayer( this, velocity )) playerModel.GetComponent<AnimationHack>().setAnimation(AnimationHack.CurrentAnimation.Run);
-		else playerModel.GetComponent<AnimationHack>().setAnimation( AnimationHack.CurrentAnimation.Stand );
+		controls.movePlayer( this, velocity );
 		controls.rotatePlayer( this, rotateVelocity );
+	}
+	void LateUpdate()
+	{
+		controls.rotateCam( this, 0.5f );
+	}
+	void OnCollisionEnter()
+	{
+		collided = true;
+	}
+
+	void OnCollisionExit()
+	{
+		collided = false;
 	}
 }

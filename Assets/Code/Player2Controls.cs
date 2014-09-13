@@ -3,33 +3,40 @@ using System.Collections;
 
 public class Player2Controls : PlayerControls
 {
-	public KeyCode p2Up = KeyCode.UpArrow;
-	public KeyCode p2Down = KeyCode.DownArrow;
-	public KeyCode p2Left = KeyCode.LeftArrow;
-	public KeyCode p2Right = KeyCode.RightArrow;
+	public KeyCode Up = KeyCode.UpArrow;
+	public KeyCode Down = KeyCode.DownArrow;
+	public KeyCode Left = KeyCode.LeftArrow;
+	public KeyCode Right = KeyCode.RightArrow;
+	public KeyCode Jump = KeyCode.RightShift;
+	public KeyCode Punch = KeyCode.Slash;
 
-	public bool movePlayer( Player player, float velocity = 10 )
+	public void movePlayer( Player player, float velocity = 10 )
 	{
+		// player.punchCollider.GetComponent<PunchDetector>().punched
+		AnimationHack ani = player.playerModel.GetComponent<AnimationHack>();
+		if ( ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) && ani.finished )
+			ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
 		Vector3 totalDirection = new Vector3();
-		if ( Input.GetKey( p2Up ) ) totalDirection += player.camera.transform.forward;
-		if ( Input.GetKey( p2Down ) ) totalDirection -= player.camera.transform.forward;
+		if ( Input.GetKey( Up ) ) totalDirection += player.camera.transform.forward;
+		if ( Input.GetKey( Down ) ) totalDirection -= player.camera.transform.forward;
+		if ( Input.GetKey( Punch ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Punch );
 		totalDirection.y = 0;
-		player.playerModel.transform.position += totalDirection.normalized * velocity;
-		player.camera.transform.position = player.playerModel.transform.position + ( -player.playerModel.transform.forward * 10 ) + new Vector3( 0, 10, 0 );
-		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, 5, 0 ));
-		if ( totalDirection.Equals( Vector3.zero ) ) return false;
-		else return true;
+		player.playerModel.rigidbody.AddForce( totalDirection.normalized * velocity );
+		if ( player.collided && Input.GetKey( Jump ) ) player.playerModel.rigidbody.AddForce( Vector3.up * velocity );
+		if ( totalDirection.Equals( Vector3.zero ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
+		else if ( !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) player.playerModel.GetComponent<AnimationHack>().setAnimation( AnimationHack.CurrentAnimation.Run );
 	}
 
 	public void rotatePlayer( Player player, float velocity = 10 )
 	{
-		if ( Input.GetKey( p2Right ) )
+		if ( Input.GetKey( Right ) )
 		{
 			player.transform.Rotate( 0, velocity, 0 );
 		}
-		if ( Input.GetKey( p2Left ) )
+		if ( Input.GetKey( Left ) )
 		{
 			player.transform.Rotate( 0, -velocity, 0 );
 		}
 	}
+	public void rotateCam( Player player, float velocity = 10 ) { }
 }

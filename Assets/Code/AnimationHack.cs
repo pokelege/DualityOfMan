@@ -3,14 +3,17 @@ using System.Collections;
 
 public class AnimationHack : MonoBehaviour {
 
-	public enum CurrentAnimation { Stand, Run };
+	public enum CurrentAnimation { Stand, Run, Punch };
 
 	public GameObject[] frames;
 	public int standStart, standEnd;
 	public int runStart, runEnd;
+	public int punchStart, punchEnd;
 	private CurrentAnimation animation = CurrentAnimation.Stand;
 	private float currentFrame;
 	public float speed;
+	private bool loop;
+	public bool finished;
 	// Use this for initialization
 	void Start () 
 	{
@@ -22,8 +25,9 @@ public class AnimationHack : MonoBehaviour {
 		currentFrame = standStart;
 	}
 
-	public void setAnimation(CurrentAnimation ani)
+	public void setAnimation(CurrentAnimation ani, bool loop = true)
 	{
+		this.loop = loop;
 		if ( !animation.Equals( ani ) )
 		{
 			animation = ani;
@@ -35,6 +39,10 @@ public class AnimationHack : MonoBehaviour {
 			else if ( animation.Equals( CurrentAnimation.Run ) )
 			{
 				currentFrame = runStart;
+			}
+			else if(animation.Equals(CurrentAnimation.Punch))
+			{
+				currentFrame = punchStart;
 			}
 			frames[( int )currentFrame].SetActive( true );
 		}
@@ -50,13 +58,44 @@ public class AnimationHack : MonoBehaviour {
 	{
 		frames[( int )currentFrame].SetActive( false );
 		currentFrame += speed * Time.deltaTime;
-		if(animation.Equals(CurrentAnimation.Stand) && currentFrame >= standEnd)
+		finished = false;
+		if(animation.Equals(CurrentAnimation.Stand) && currentFrame >= standEnd - 1)
 		{
-			currentFrame = standStart;
+			if(loop)
+			{
+				currentFrame = standStart;
+			}
+			else
+			{
+				currentFrame = standEnd;
+				finished = true;
+			}
 		}
-		else if ( animation.Equals( CurrentAnimation.Run ) && currentFrame >= runEnd )
+		else if ( animation.Equals( CurrentAnimation.Run ) && currentFrame >= runEnd - 1 )
 		{
 			currentFrame = runStart;
+			if ( loop )
+			{
+				currentFrame = runStart;
+			}
+			else
+			{
+				currentFrame = runEnd;
+				finished = true;
+			}
+		}
+		else if ( animation.Equals( CurrentAnimation.Punch ) && currentFrame >= punchEnd - 1 )
+		{
+			currentFrame = punchStart;
+			if ( loop )
+			{
+				currentFrame = punchStart;
+			}
+			else
+			{
+				currentFrame = punchEnd;
+				finished = true;
+			}
 		}
 		frames[( int )currentFrame].SetActive( true );
 	}
