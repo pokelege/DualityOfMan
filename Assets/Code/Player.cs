@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 		controls.movePlayer( this, velocity, jumpPower );
+		if ( health <= 0 ) Application.Quit() ;
 	}
 	void LateUpdate()
 	{
