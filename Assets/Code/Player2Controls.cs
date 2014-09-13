@@ -23,7 +23,11 @@ public class Player2Controls : PlayerControls
 		// player.punchCollider.GetComponent<PunchDetector>().punched
 		AnimationHack ani = player.playerModel.GetComponent<AnimationHack>();
 		if ( ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) && ani.finished )
+		{
+			PunchDetector detector = player.punchCollider.GetComponent<PunchDetector>();
+			if ( detector.punched != null ) detector.punched.GetComponent<Player>().health -= 1;
 			ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
+		}
 		Vector3 totalDirection = new Vector3();
 		if ( Input.GetKey( Up ) ) totalDirection += player.camera.transform.forward;
 		if ( Input.GetKey( Down ) ) totalDirection -= player.camera.transform.forward;
@@ -52,6 +56,7 @@ public class Player2Controls : PlayerControls
 		vectorDirection.y = 0;
 		vectorDirection = vectorDirection.normalized;
 		float lastCameraDistance = ( player.camera.transform.position - player.playerModel.transform.position ).magnitude;
+
 		if ( Input.GetKey( CamRight ) )
 		{
 			targetCameraPos += Vector3.Cross( vectorDirection, Vector3.up ) * velocity;

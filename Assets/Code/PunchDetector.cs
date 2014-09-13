@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PunchDetector : MonoBehaviour
 {
-	public bool punched = false;
+	public GameObject punched = null;
 
 	// Use this for initialization
 	void Start()
@@ -16,13 +16,14 @@ public class PunchDetector : MonoBehaviour
 	{
 
 	}
-	void OnCollisionEnter()
+	void OnTriggerEnter(Collider collision)
 	{
-		punched = true;
+		if(collision.gameObject.CompareTag("Player"))
+			punched = collision.gameObject;
 	}
 
-	void OnCollisionExit()
+	void OnTriggerExit( Collider collision )
 	{
-		punched = false;
+		punched = null;
 	}
 }
