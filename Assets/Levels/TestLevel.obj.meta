@@ -12,6 +12,7 @@ ModelImporter:
     100012: pPlane2
     100014: pSphere1
     100016: //RootNode
+    100018: default
     400000: pasted__pPlane2_group
     400002: pasted__pSphere1_group1
     400004: pasted__pSphere1_group2
@@ -21,6 +22,7 @@ ModelImporter:
     400012: pPlane2
     400014: pSphere1
     400016: //RootNode
+    400018: default
     2300000: pasted__pPlane2_group
     2300002: pasted__pSphere1_group1
     2300004: pasted__pSphere1_group2
@@ -29,6 +31,7 @@ ModelImporter:
     2300010: pPlane1
     2300012: pPlane2
     2300014: pSphere1
+    2300016: default
     3300000: pasted__pPlane2_group
     3300002: pasted__pSphere1_group1
     3300004: pasted__pSphere1_group2
@@ -37,6 +40,7 @@ ModelImporter:
     3300010: pPlane1
     3300012: pPlane2
     3300014: pSphere1
+    3300016: default
     4300000: pasted__pPlane2_group
     4300002: pasted__pSphere1_group1
     4300004: pasted__pSphere1_group2
@@ -45,6 +49,7 @@ ModelImporter:
     4300010: pPlane1
     4300012: pPlane2
     4300014: pSphere1
+    4300016: default
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -54,6 +59,7 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5

@@ -18,7 +18,7 @@ public class Player1Controls : PlayerControls
 	{
 		targetCameraPos = camPos;
 	}
-	public void movePlayer(Player player, float velocity = 10)
+	public void movePlayer(Player player, float velocity = 10, float jumpPower = 10)
 	{
 		// player.punchCollider.GetComponent<PunchDetector>().punched
 		AnimationHack ani = player.playerModel.GetComponent<AnimationHack>();
@@ -39,7 +39,7 @@ public class Player1Controls : PlayerControls
 		totalDirection.y = 0;
 		player.playerModel.rigidbody.AddForce( totalDirection.normalized * velocity );
 		player.transform.LookAt( player.transform.position + totalDirection );
-		if ( player.collided && Input.GetKey( Jump ) ) player.playerModel.rigidbody.AddForce( Vector3.up * velocity );
+		if ( player.collided && Input.GetKey( Jump ) ) player.playerModel.rigidbody.AddForce( Vector3.up * jumpPower );
 		if ( totalDirection.Equals( Vector3.zero ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
 		else if( !ani.getAnimation().Equals(AnimationHack.CurrentAnimation.Punch)) player.playerModel.GetComponent<AnimationHack>().setAnimation( AnimationHack.CurrentAnimation.Run );
 		lastPos = player.playerModel.transform.position;

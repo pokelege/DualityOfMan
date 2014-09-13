@@ -5,6 +5,7 @@ public class Player : MonoBehaviour
 {
 	public float health;
 	public float velocity;
+	public float jumpPower = 10;
 	public float rotateVelocity;
 	public Camera camera;
 	public GameObject playerModel;
@@ -23,7 +24,7 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		controls.movePlayer( this, velocity );
+		controls.movePlayer( this, velocity, jumpPower );
 	}
 	void LateUpdate()
 	{
