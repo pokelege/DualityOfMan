@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Gate : MonoBehaviour
 {
-	GameObject gate;
-	GameObject[] buttons;
+	public GameObject gate;
+	public GameObject[] buttons;
 	// Use this for initialization
 	void Start ()
 	{
