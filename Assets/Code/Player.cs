@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 		if ( player2 ) controls = new Player2Controls();
 		else controls = new Player1Controls();
 		controls.setTargetCamPos( camera.transform.position );
+		Physics.gravity = new Vector3( 0, -20, 0 );
 	}
 	
 	// Update is called once per frame
@@ -30,13 +31,13 @@ public class Player : MonoBehaviour
 	{
 		controls.rotateCam( this, 0.5f );
 	}
-	void OnCollisionEnter()
+	void OnCollisionEnter( Collision collision )
 	{
-		collided = true;
+		if(collision.gameObject.CompareTag("Floor")) collided = true;
 	}
 
-	void OnCollisionExit()
+	void OnCollisionExit( Collision collision )
 	{
-		collided = false;
+		if ( collision.gameObject.CompareTag( "Floor" ) ) collided = false;
 	}
 }

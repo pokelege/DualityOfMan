@@ -41,7 +41,13 @@ public class Player1Controls : PlayerControls
 		}
 		if ( Input.GetKey( Punch ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Punch, false );
 		totalDirection.y = 0;
-		player.playerModel.rigidbody.AddForce( totalDirection.normalized * velocity );
+		
+		if ( totalDirection.Equals( Vector3.zero ) ) player.playerModel.rigidbody.velocity = new Vector3( 0, player.playerModel.rigidbody.velocity.y, 0 );
+		else
+		{
+			Vector3 newVelo = totalDirection.normalized * velocity;
+			player.playerModel.rigidbody.velocity = new Vector3(newVelo.x, player.playerModel.rigidbody.velocity.y, newVelo.z);
+		}
 		player.transform.LookAt( player.transform.position + totalDirection );
 		if ( player.collided && Input.GetKey( Jump ) ) player.playerModel.rigidbody.AddForce( Vector3.up * jumpPower );
 		if ( totalDirection.Equals( Vector3.zero ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
