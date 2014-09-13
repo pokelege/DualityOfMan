@@ -22,7 +22,6 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 		controls.movePlayer( this, velocity );
-		controls.rotatePlayer( this, rotateVelocity );
 	}
 	void LateUpdate()
 	{

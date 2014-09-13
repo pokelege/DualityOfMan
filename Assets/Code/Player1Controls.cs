@@ -39,10 +39,6 @@ public class Player1Controls : PlayerControls
 		lastPos = player.playerModel.transform.position;
 	}
 
-	public void rotatePlayer( Player player, float velocity = 10 )
-	{
-	}
-
 	public void rotateCam(Player player, float velocity = 10)
 	{
 		player.camera.transform.position += player.playerModel.transform.position - lastPos;
