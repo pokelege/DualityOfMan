@@ -59,7 +59,7 @@ public class AnimationHack : MonoBehaviour {
 		frames[( int )currentFrame].SetActive( false );
 		currentFrame += speed * Time.deltaTime;
 		finished = false;
-		if(animation.Equals(CurrentAnimation.Stand) && currentFrame >= standEnd - 1)
+		if ( animation.Equals( CurrentAnimation.Stand ) && ( int )currentFrame > standEnd )
 		{
 			if(loop)
 			{
@@ -71,7 +71,7 @@ public class AnimationHack : MonoBehaviour {
 				finished = true;
 			}
 		}
-		else if ( animation.Equals( CurrentAnimation.Run ) && currentFrame >= runEnd - 1 )
+		else if ( animation.Equals( CurrentAnimation.Run ) && (int)currentFrame > runEnd )
 		{
 			currentFrame = runStart;
 			if ( loop )
@@ -84,7 +84,7 @@ public class AnimationHack : MonoBehaviour {
 				finished = true;
 			}
 		}
-		else if ( animation.Equals( CurrentAnimation.Punch ) && currentFrame >= punchEnd - 1 )
+		else if ( animation.Equals( CurrentAnimation.Punch ) && ( int )currentFrame > punchEnd )
 		{
 			currentFrame = punchStart;
 			if ( loop )
