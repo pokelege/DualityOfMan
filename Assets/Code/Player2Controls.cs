@@ -29,7 +29,7 @@ public class Player2Controls : PlayerControls
 		{
 			totalDirection -= player.camera.transform.right;
 		}
-		if ( Input.GetKey( Punch ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Punch );
+		if ( Input.GetKey( Punch ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Punch, false );
 		totalDirection.y = 0;
 		player.playerModel.rigidbody.AddForce( totalDirection.normalized * velocity );
 		player.transform.LookAt( player.transform.position + totalDirection );

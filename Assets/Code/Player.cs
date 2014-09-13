@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+	public float health;
 	public float velocity;
 	public float rotateVelocity;
 	public Camera camera;
