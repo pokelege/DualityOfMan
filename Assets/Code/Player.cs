@@ -6,6 +6,12 @@ public class Player : MonoBehaviour
 	public float health;
 	public float velocity;
 	public float jumpPower = 10;
+	public float cameraRotateSpeed = 0.5f;
+	public float cameraDistance = 5;
+	public float cameraHeight = 3;
+	public float cameraFocusHeight = 1;
+	public float cameraSpeed = 25;
+	public float cameraMaxDistance = 10;
 	public float rotateVelocity;
 	public Camera camera;
 	public GameObject playerModel;
@@ -30,7 +36,7 @@ public class Player : MonoBehaviour
 	}
 	void LateUpdate()
 	{
-		controls.rotateCam( this, 0.5f );
+		controls.rotateCam( this, cameraRotateSpeed, cameraDistance, cameraHeight, cameraFocusHeight,cameraSpeed, cameraMaxDistance  );
 	}
 	void OnCollisionStay( Collision collision )
 	{

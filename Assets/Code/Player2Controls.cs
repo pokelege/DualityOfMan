@@ -54,7 +54,7 @@ public class Player2Controls : PlayerControls
 		lastPos = player.playerModel.transform.position;
 	}
 
-	public void rotateCam( Player player, float velocity = 10 )
+	public void rotateCam( Player player, float velocity = 10, float cameraDistance = 5, float cameraHeight = 3, float cameraFocusHeight = 3, float cameraSpeed = 25, float cameraMaxDistance = 10 )
 	{
 		targetCameraPos += player.playerModel.transform.position - lastPos;
 		Vector3 vectorDirection = ( targetCameraPos - player.playerModel.transform.position ).normalized;
@@ -76,9 +76,9 @@ public class Player2Controls : PlayerControls
 		vectorDirection = ( targetCameraPos - player.playerModel.transform.position ).normalized;
 		vectorDirection.y = 0;
 		vectorDirection = vectorDirection.normalized;
-		targetCameraPos = ( vectorDirection * 3 ) + new Vector3( 0, 1, 0 ) + player.playerModel.transform.position;
-		if ( ( player.camera.transform.position - player.playerModel.transform.position ).magnitude > 10 ) player.camera.transform.position = targetCameraPos;
-		else player.camera.rigidbody.AddForce( ( targetCameraPos - player.camera.transform.position ) * 25 );
-		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, 1, 0 ) );
+		targetCameraPos = ( vectorDirection * cameraDistance ) + new Vector3( 0, cameraHeight, 0 ) + player.playerModel.transform.position;
+		if ( ( player.camera.transform.position - player.playerModel.transform.position ).magnitude > cameraMaxDistance ) player.camera.transform.position = targetCameraPos;
+		else player.camera.rigidbody.AddForce( ( targetCameraPos - player.camera.transform.position ) * cameraSpeed );
+		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, cameraFocusHeight, 0 ) );
 	}
 }
