@@ -48,7 +48,7 @@ public class Button : MonoBehaviour
 			{
 				if(collision.collider.gameObject.Equals(i.elligibleObject))
 				{
-					if ( buttonSound != null ) audio.PlayOneShot( buttonSound );
+					if ( buttonSound != null && i.collided == false ) audio.PlayOneShot( buttonSound );
 					i.collided = true;
 					pressed = true;
 				}
@@ -56,7 +56,7 @@ public class Button : MonoBehaviour
 		}
 		else
 		{
-			if ( buttonSound != null ) audio.PlayOneShot( buttonSound );
+			if ( buttonSound != null && pressed == false ) audio.PlayOneShot( buttonSound );
 			pressed = true;
 		}
 
@@ -71,7 +71,7 @@ public class Button : MonoBehaviour
 			{
 				if ( collision.collider.gameObject.Equals( i.elligibleObject ) )
 				{
-					if ( buttonSound != null ) audio.PlayOneShot( buttonSound );
+					if ( buttonSound != null && i.collided == true ) audio.PlayOneShot( buttonSound );
 					i.collided = false;
 				}
 				else if(i.collided)
