@@ -34,7 +34,7 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 		controls.movePlayer( this, velocity, jumpPower, jumpSound, punchSound );
-		if ( health <= 0 ) Application.Quit() ;
+		if ( health <= 0 ) Application.LoadLevel(0) ;
 	}
 	void LateUpdate()
 	{
