@@ -52,6 +52,7 @@
      <Compile Include="Assets\Code\Gate.cs" />
      <Compile Include="Assets\Code\LevelManager.cs" />
      <Compile Include="Assets\Code\LevelOneHandler.cs" />
+     <Compile Include="Assets\Code\LevelThreeHandler.cs" />
      <Compile Include="Assets\Code\LevelTwoHandler.cs" />
      <Compile Include="Assets\Code\Player.cs" />
      <Compile Include="Assets\Code\Player1Controls.cs" />

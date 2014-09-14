@@ -34,6 +34,15 @@ ModelImporter:
     100050: pPlane2
     100052: pTorus1
     100054: pTorus2
+    100056: pasted__pasted__pCylinder4_pasted__group43 group44
+    100058: pasted__pCylinder4_group43
+    100060: pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__group43
+      pasted__pasted__group45 pasted__group46 group47
+    100062: pasted__pasted__pasted__pCylinder4_pasted__pasted__group43 pasted__group45
+      group46
+    100064: pasted__pasted__pCylinder4_pasted__group43 group45
+    100066: pasted__pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__pasted__group43
+      pasted__pasted__pasted__group45 pasted__pasted__group46 pasted__group47 group48
     400000: default
     400002: //RootNode
     400004: pasted__pasted__pasted__pasted__pasted__pSphere1_pasted__pasted__pasted__pasted__group8
@@ -65,6 +74,15 @@ ModelImporter:
     400050: pPlane2
     400052: pTorus1
     400054: pTorus2
+    400056: pasted__pasted__pCylinder4_pasted__group43 group44
+    400058: pasted__pCylinder4_group43
+    400060: pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__group43
+      pasted__pasted__group45 pasted__group46 group47
+    400062: pasted__pasted__pasted__pCylinder4_pasted__pasted__group43 pasted__group45
+      group46
+    400064: pasted__pasted__pCylinder4_pasted__group43 group45
+    400066: pasted__pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__pasted__group43
+      pasted__pasted__pasted__group45 pasted__pasted__group46 pasted__group47 group48
     2300000: default
     2300002: pasted__pasted__pasted__pasted__pasted__pSphere1_pasted__pasted__pasted__pasted__group8
       pasted__pasted__pasted__group13 pasted__pasted__group14 pasted__group16 group17
@@ -95,6 +113,15 @@ ModelImporter:
     2300048: pPlane2
     2300050: pTorus1
     2300052: pTorus2
+    2300054: pasted__pasted__pCylinder4_pasted__group43 group44
+    2300056: pasted__pCylinder4_group43
+    2300058: pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__group43
+      pasted__pasted__group45 pasted__group46 group47
+    2300060: pasted__pasted__pasted__pCylinder4_pasted__pasted__group43 pasted__group45
+      group46
+    2300062: pasted__pasted__pCylinder4_pasted__group43 group45
+    2300064: pasted__pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__pasted__group43
+      pasted__pasted__pasted__group45 pasted__pasted__group46 pasted__group47 group48
     3300000: default
     3300002: pasted__pasted__pasted__pasted__pasted__pSphere1_pasted__pasted__pasted__pasted__group8
       pasted__pasted__pasted__group13 pasted__pasted__group14 pasted__group16 group17
@@ -125,6 +152,15 @@ ModelImporter:
     3300048: pPlane2
     3300050: pTorus1
     3300052: pTorus2
+    3300054: pasted__pasted__pCylinder4_pasted__group43 group44
+    3300056: pasted__pCylinder4_group43
+    3300058: pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__group43
+      pasted__pasted__group45 pasted__group46 group47
+    3300060: pasted__pasted__pasted__pCylinder4_pasted__pasted__group43 pasted__group45
+      group46
+    3300062: pasted__pasted__pCylinder4_pasted__group43 group45
+    3300064: pasted__pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__pasted__group43
+      pasted__pasted__pasted__group45 pasted__pasted__group46 pasted__group47 group48
     4300000: default
     4300002: pasted__pasted__pasted__pasted__pasted__pSphere1_pasted__pasted__pasted__pasted__group8
       pasted__pasted__pasted__group13 pasted__pasted__group14 pasted__group16 group17
@@ -155,6 +191,15 @@ ModelImporter:
     4300048: pPlane2
     4300050: pTorus1
     4300052: pTorus2
+    4300054: pasted__pasted__pCylinder4_pasted__group43 group44
+    4300056: pasted__pCylinder4_group43
+    4300058: pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__group43
+      pasted__pasted__group45 pasted__group46 group47
+    4300060: pasted__pasted__pasted__pCylinder4_pasted__pasted__group43 pasted__group45
+      group46
+    4300062: pasted__pasted__pCylinder4_pasted__group43 group45
+    4300064: pasted__pasted__pasted__pasted__pasted__pCylinder4_pasted__pasted__pasted__pasted__group43
+      pasted__pasted__pasted__group45 pasted__pasted__group46 pasted__group47 group48
     9500000: //RootNode
   materials:
     importMaterials: 1
