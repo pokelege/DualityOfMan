@@ -20,6 +20,6 @@ public class Gate : MonoBehaviour
 			if ( !i.GetComponent<Button>().pressed ) { pressedAll = false; break; }
 		}
 
-		if ( pressedAll ) gate.SetActive( false );
+		gate.SetActive( !pressedAll );
 	}
 }
