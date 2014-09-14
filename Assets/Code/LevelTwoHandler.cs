@@ -22,6 +22,6 @@ public class LevelTwoHandler : MonoBehaviour {
 	
 	void LoadNextLevel()
 	{
-		Application.LoadLevel(2);
+		Application.LoadLevel( "LevelThree" );
 	}
 }
