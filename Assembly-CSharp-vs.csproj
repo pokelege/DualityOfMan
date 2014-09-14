@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Code\AnimationHack.cs" />
      <Compile Include="Assets\Code\Button.cs" />
+     <Compile Include="Assets\Code\CreditsScript.cs" />
      <Compile Include="Assets\Code\Elevator.cs" />
      <Compile Include="Assets\Code\Gate.cs" />
      <Compile Include="Assets\Code\LevelManager.cs" />
@@ -60,6 +61,7 @@
      <Compile Include="Assets\Code\PlayerControls.cs" />
      <Compile Include="Assets\Code\PunchDetector.cs" />
      <Compile Include="Assets\Code\WarpDetector.cs" />
+     <Compile Include="Assets\MenuScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
