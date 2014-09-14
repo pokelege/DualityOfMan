@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 	{
 		controls.rotateCam( this, 0.5f );
 	}
-	void OnCollisionEnter( Collision collision )
+	void OnCollisionStay( Collision collision )
 	{
 		if(collision.gameObject.CompareTag("Floor")) 
 		collided = true;

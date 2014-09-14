@@ -78,7 +78,8 @@ public class Player1Controls : PlayerControls
 		vectorDirection.y = 0;
 		vectorDirection = vectorDirection.normalized;
 		targetCameraPos = ( vectorDirection * 3 ) + new Vector3( 0, 1, 0 ) + player.playerModel.transform.position;
-		player.camera.rigidbody.AddForce((targetCameraPos - player.camera.transform.position) * 25);
+		if ( ( player.camera.transform.position - player.playerModel.transform.position ).magnitude > 10 ) player.camera.transform.position = targetCameraPos;
+		else player.camera.rigidbody.AddForce( ( targetCameraPos - player.camera.transform.position ) * 25 );
 		player.camera.transform.LookAt( player.playerModel.transform.position + new Vector3( 0, 1, 0 ) );
 	}
 }
