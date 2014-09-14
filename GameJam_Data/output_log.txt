@@ -10,29 +10,19 @@ Platform assembly: D:\Documents\Unity\Game Jam\GameJam_Data\Managed\UnityEngine.
 Loading D:\Documents\Unity\Game Jam\GameJam_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: D:\Documents\Unity\Game Jam\GameJam_Data\Managed\Assembly-CSharp.dll (this message is harmless)
 Loading D:\Documents\Unity\Game Jam\GameJam_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-- Completed reload, in  0.063 seconds
+- Completed reload, in  0.060 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-The referenced script on this Behaviour is missing!
- 
-(Filename:  Line: 1783)
-
-UnloadTime: 0.576535 ms
+UnloadTime: 0.896239 ms
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 641.
-Total: 0.641051 ms (FindLiveObjects: 0.020135 ms CreateObjectMapping: 0.009040 ms MarkObjects: 0.063694 ms  DeleteObjects: 0.050544 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 647.
+Total: 0.817340 ms (FindLiveObjects: 0.037805 ms CreateObjectMapping: 0.008629 ms MarkObjects: 0.078076 ms  DeleteObjects: 0.050544 ms)
 
-Joystick disconnected ("Nintendo RVL-CNT-01").
- 
-(Filename:  Line: 1251)
+UnloadTime: 0.835832 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
 
-Joystick reconnected ("Nintendo RVL-CNT-01").
- 
-(Filename:  Line: 1316)
-
-Joystick disconnected ("Nintendo RVL-CNT-01").
- 
-(Filename:  Line: 1251)
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 656.
+Total: 0.673925 ms (FindLiveObjects: 0.024244 ms CreateObjectMapping: 0.011506 ms MarkObjects: 0.080131 ms  DeleteObjects: 0.113827 ms)
 
