@@ -6,6 +6,7 @@ public class Button : MonoBehaviour
 	public bool pressed = false;
 	public GameObject up, down;
 	public GameObject[] elligibleObjects;
+	public AudioClip buttonSound;
 	public bool releaseable;
 	private class ObjectChecker { public GameObject elligibleObject; public bool collided;}
 	private ObjectChecker[] objects;
@@ -47,6 +48,7 @@ public class Button : MonoBehaviour
 			{
 				if(collision.collider.gameObject.Equals(i.elligibleObject))
 				{
+					if ( buttonSound != null ) audio.PlayOneShot( buttonSound );
 					i.collided = true;
 					pressed = true;
 				}
@@ -68,6 +70,7 @@ public class Button : MonoBehaviour
 			{
 				if ( collision.collider.gameObject.Equals( i.elligibleObject ) )
 				{
+					if ( buttonSound != null ) audio.PlayOneShot( buttonSound );
 					i.collided = false;
 				}
 				else if(i.collided)

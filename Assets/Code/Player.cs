@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
 	public Camera camera;
 	public GameObject playerModel;
 	public GameObject punchCollider;
+	public AudioClip jumpSound;
+	public AudioClip punchSound;
 	public PlayerControls controls;
 	public bool player2 = false;
 	public bool collided = false;
@@ -31,7 +33,7 @@ public class Player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		controls.movePlayer( this, velocity, jumpPower );
+		controls.movePlayer( this, velocity, jumpPower, jumpSound, punchSound );
 		if ( health <= 0 ) Application.Quit() ;
 	}
 	void LateUpdate()

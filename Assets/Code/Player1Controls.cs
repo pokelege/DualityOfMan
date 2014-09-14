@@ -18,7 +18,7 @@ public class Player1Controls : PlayerControls
 	{
 		targetCameraPos = camPos;
 	}
-	public void movePlayer(Player player, float velocity = 10, float jumpPower = 10)
+	public void movePlayer( Player player, float velocity = 10, float jumpPower = 10, AudioClip jumpSound = null, AudioClip punchSound = null )
 	{
 		// player.punchCollider.GetComponent<PunchDetector>().punched
 		AnimationHack ani = player.playerModel.GetComponent<AnimationHack>();
@@ -26,6 +26,7 @@ public class Player1Controls : PlayerControls
 		{
 			PunchDetector detector = player.punchCollider.GetComponent<PunchDetector>();
 			if ( detector.punched != null ) detector.punched.GetComponent<Player>().health -= 1;
+			if(punchSound != null) player.audio.PlayOneShot( punchSound );
 			ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
 		}
 		Vector3 totalDirection = new Vector3();
@@ -49,7 +50,11 @@ public class Player1Controls : PlayerControls
 			player.playerModel.rigidbody.velocity = new Vector3(newVelo.x, player.playerModel.rigidbody.velocity.y, newVelo.z);
 		}
 		player.transform.LookAt( player.transform.position + totalDirection );
-		if ( player.collided && Input.GetKey( Jump ) ) player.playerModel.rigidbody.AddForce( Vector3.up * jumpPower );
+		if ( player.collided && Input.GetKey( Jump ) )
+		{
+			player.playerModel.rigidbody.AddForce( Vector3.up * jumpPower );
+			if ( jumpSound != null ) player.audio.PlayOneShot( jumpSound );
+		}
 		if ( totalDirection.Equals( Vector3.zero ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
 		else if( !ani.getAnimation().Equals(AnimationHack.CurrentAnimation.Punch)) player.playerModel.GetComponent<AnimationHack>().setAnimation( AnimationHack.CurrentAnimation.Run );
 		lastPos = player.playerModel.transform.position;
