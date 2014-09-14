@@ -3,14 +3,14 @@ using System.Collections;
 
 public class Player2Controls : PlayerControls
 {
-	public KeyCode Up = KeyCode.UpArrow;
-	public KeyCode Down = KeyCode.DownArrow;
-	public KeyCode Left = KeyCode.LeftArrow;
-	public KeyCode Right = KeyCode.RightArrow;
-	public KeyCode CamLeft = KeyCode.LeftBracket;
-	public KeyCode CamRight = KeyCode.RightBracket;
-	public KeyCode Jump = KeyCode.RightShift;
-	public KeyCode Punch = KeyCode.Slash;
+	public KeyCode Up = KeyCode.I;
+	public KeyCode Down = KeyCode.K;
+	public KeyCode Left = KeyCode.J;
+	public KeyCode Right = KeyCode.L;
+	public KeyCode CamLeft = KeyCode.U;
+	public KeyCode CamRight = KeyCode.O;
+	public KeyCode Jump = KeyCode.Alpha7;
+	public KeyCode Punch = KeyCode.Alpha9;
 	public Vector3 lastPos;
 	private Vector3 targetCameraPos;
 
