@@ -34,7 +34,8 @@ public class Player : MonoBehaviour
 	void Update ()
 	{
 		controls.movePlayer( this, velocity, jumpPower, jumpSound, punchSound );
-		if ( health <= 0 || Input.GetKey(KeyCode.Escape) ) Application.LoadLevel("Credits") ;
+		if ( health <= 0 ) Application.LoadLevel("Credits") ;
+		if ( Input.GetKey( KeyCode.Escape ) ) Application.LoadLevel( "Menu" );
 	}
 	void LateUpdate()
 	{

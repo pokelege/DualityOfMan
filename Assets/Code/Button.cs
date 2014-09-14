@@ -56,6 +56,7 @@ public class Button : MonoBehaviour
 		}
 		else
 		{
+			if ( buttonSound != null ) audio.PlayOneShot( buttonSound );
 			pressed = true;
 		}
 
