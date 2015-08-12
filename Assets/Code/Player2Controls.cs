@@ -3,14 +3,6 @@ using System.Collections;
 
 public class Player2Controls : PlayerControls
 {
-	public KeyCode Up = KeyCode.I;
-	public KeyCode Down = KeyCode.K;
-	public KeyCode Left = KeyCode.J;
-	public KeyCode Right = KeyCode.L;
-	public KeyCode CamLeft = KeyCode.U;
-	public KeyCode CamRight = KeyCode.O;
-	public KeyCode Jump = KeyCode.Alpha7;
-	public KeyCode Punch = KeyCode.Alpha9;
 	public Vector3 lastPos;
 	private Vector3 targetCameraPos;
 
@@ -30,17 +22,12 @@ public class Player2Controls : PlayerControls
 			ani.setAnimation( AnimationHack.CurrentAnimation.Stand );
 		}
 		Vector3 totalDirection = new Vector3();
-		if ( Input.GetKey( Up ) ) totalDirection += player.camera.transform.forward;
-		if ( Input.GetKey( Down ) ) totalDirection -= player.camera.transform.forward;
-		if ( Input.GetKey( Right ) )
-		{
-			totalDirection += player.camera.transform.right;
-		}
-		if ( Input.GetKey( Left ) )
-		{
-			totalDirection -= player.camera.transform.right;
-		}
-		if ( Input.GetKey( Punch ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Punch, false );
+        totalDirection += player.camera.transform.forward * Input.GetAxis("Vertical_P2");
+        totalDirection += player.camera.transform.right * Input.GetAxis("Horizontal_P2");
+
+        Debug.Log(Input.GetAxis("Vertical_P2"));
+
+		if ( Input.GetButton( "Punch_P2" ) && !ani.getAnimation().Equals( AnimationHack.CurrentAnimation.Punch ) ) ani.setAnimation( AnimationHack.CurrentAnimation.Punch, false );
 		totalDirection.y = 0;
 
 		if ( totalDirection.Equals( Vector3.zero ) ) player.playerModel.rigidbody.velocity = new Vector3( 0, player.playerModel.rigidbody.velocity.y, 0 );
@@ -50,7 +37,7 @@ public class Player2Controls : PlayerControls
 			player.playerModel.rigidbody.velocity = new Vector3( newVelo.x, player.playerModel.rigidbody.velocity.y, newVelo.z );
 		}
 		player.transform.LookAt( player.transform.position + totalDirection );
-		if ( player.collided && Input.GetKey( Jump ) )
+		if ( player.collided && Input.GetButton( "Jump_P2" ) )
 		{
 			player.playerModel.rigidbody.AddForce( Vector3.up * jumpPower );
 			if ( jumpSound != null ) player.audio.PlayOneShot( jumpSound );
@@ -68,16 +55,16 @@ public class Player2Controls : PlayerControls
 		vectorDirection = vectorDirection.normalized;
 		float lastCameraDistance = ( player.camera.transform.position - player.playerModel.transform.position ).magnitude;
 
-		if ( Input.GetKey( CamRight ) )
-		{
-			targetCameraPos += Vector3.Cross( vectorDirection, Vector3.up ) * velocity;
-			player.camera.transform.position += Vector3.Cross( vectorDirection, Vector3.up ) * velocity;
-		}
-		if ( Input.GetKey( CamLeft ) )
-		{
-			targetCameraPos += Vector3.Cross( Vector3.up, vectorDirection ) * velocity;
-			player.camera.transform.position += Vector3.Cross( Vector3.up, vectorDirection ) * velocity;
-		}
+        if (Input.GetAxis("CamHorizontal_P2") > 0)
+        {
+            targetCameraPos += Vector3.Cross(vectorDirection, Vector3.up) * velocity;
+            player.camera.transform.position += Vector3.Cross(vectorDirection, Vector3.up) * velocity;
+        }
+        if (Input.GetAxis("CamHorizontal_P2") < 0)
+        {
+            targetCameraPos += Vector3.Cross(Vector3.up, vectorDirection) * velocity;
+            player.camera.transform.position += Vector3.Cross(Vector3.up, vectorDirection) * velocity;
+        }
 		player.camera.transform.position = ( ( player.camera.transform.position - player.playerModel.transform.position ).normalized * lastCameraDistance ) + player.playerModel.transform.position;
 		vectorDirection = ( targetCameraPos - player.playerModel.transform.position ).normalized;
 		vectorDirection.y = 0;

@@ -1,18 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MenuScript : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+public class MenuScript : MonoBehaviour 
+{
 	// Update is called once per frame
 	void Update ()
 	{
-		if ( Input.GetKey( KeyCode.Space ) ) Application.LoadLevel( 1 );
-		if ( Input.GetKey( KeyCode.R ) ) Application.LoadLevel( "Credits" );
-		if ( Input.GetKey( KeyCode.Escape ) ) Application.Quit();
+		if ( Input.GetButton("Start_P1") || Input.GetButton("Start_P2") ) Application.LoadLevel( 1 );
+		if ( Input.GetButton("RTrigger_P1") || Input.GetButton("RTrigger_P2") ) Application.LoadLevel( "Credits" );
+		if ( Input.GetButton("Punch_P1") || Input.GetButton("Punch_P2") ) Application.Quit();
 	}
 }

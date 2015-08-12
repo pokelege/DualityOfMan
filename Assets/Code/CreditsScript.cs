@@ -1,16 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CreditsScript : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
+public class CreditsScript : MonoBehaviour 
+{
 	// Update is called once per frame
 	void Update ()
 	{
-		if ( Input.GetKey( KeyCode.Escape ) ) Application.LoadLevel( "Menu" );
+		if (Input.GetButton("Punch_P1") || Input.GetButton("Punch_P2")) Application.LoadLevel( "Menu" );
 	}
 }
